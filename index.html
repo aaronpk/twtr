@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Twtr.io : Algorithmic Twitter URL shortener" />
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Twtr.io</title>
+    <title>twtr.io</title>
   </head>
-
   <body>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/aaronpk/twtr.io">View on GitHub</a>
-
-          <h1 id="project_title">Twtr.io</h1>
+          <h1 id="project_title">twtr.io</h1>
           <h2 id="project_tagline">Algorithmic Twitter URL shortener</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/aaronpk/twtr.io/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/aaronpk/twtr.io/tarball/master">Download this project as a tar.gz file</a>
-            </section>
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a name="twtrio" class="anchor" href="#twtrio"><span class="octicon octicon-link"></span></a>twtr.io</h1>
 
 <p>twtr.io is an algorithmic URL shortener for Twitter URLs.</p>
 
@@ -41,35 +29,25 @@
 <h2>
 <a name="try-it-now" class="anchor" href="#try-it-now"><span class="octicon octicon-link"></span></a>Try it Now!</h2>
 
+  <form action="/shorten" method="get">
+    Tweet URL: <input type="text" name="url">
+    <input type="button" value="Make Shorter!">
+    <input type="hidden" name="format" value="html">
+  </form>
 
-Tweet URL: 
 
 <h2>
 <a name="shortening" class="anchor" href="#shortening"><span class="octicon octicon-link"></span></a>Shortening</h2>
 
-<p>The base 10 tweet ID is converted to a <a href="http://ttk.me/w/NewBase60">NewBase60</a> number to compress it. The ID is appended to "<a href="http://twtr.io/">http://twtr.io/</a>" forming the shortened URL for the tweet.</p>
+<p>The base 10 tweet ID is converted to a <a href="http://ttk.me/w/NewBase60">NewBase60</a> number to compress it. The ID is appended to <code>http://twtr.io/</code> forming the shortened URL for the tweet.</p>
+
 
 <h2>
 <a name="un-shortening" class="anchor" href="#un-shortening"><span class="octicon octicon-link"></span></a>Un-Shortening</h2>
 
-<p>To un-shorten a link, the NewBase60 number is converted back to its base 10 equivalent. The base 10 ID is appended to "<a href="https://twitter.com/_/status/">https://twitter.com/_/status/</a>". This takes advantage of a feature of twitter.com where they will redirect a tweet URL to the correct username.</p>
+<p>To un-shorten a link, the NewBase60 number is converted back to its base 10 equivalent. The base 10 ID is appended to <code>https://twitter.com/_/status/</code>. This takes advantage of a feature of twitter.com where they will redirect a tweet URL to the correct username.</p>
 
-<h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
-<p>Copyright 2013 by Aaron Parecki</p>
-
-<p>Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at</p>
-
-<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
-
-<p>Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.</p>
       </section>
     </div>
 
@@ -77,11 +55,8 @@ limitations under the License.</p>
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">Twtr.io maintained by <a href="https://github.com/aaronpk">aaronpk</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
 
   </body>
 </html>
