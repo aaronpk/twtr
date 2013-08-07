@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Twtr.io : Algorithmic Twitter URL shortener" />
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <title>twtr.io</title>
-  </head>
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/aaronpk/twtr.io">View on GitHub</a>
-          <h1 id="project_title">twtr.io</h1>
-          <h2 id="project_tagline">Algorithmic Twitter URL shortener</h2>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+<?php include('header.php'); ?>
 
 <p>twtr.io is an algorithmic URL shortener for Twitter URLs.</p>
 
@@ -48,15 +26,14 @@
 <p>To un-shorten a link, the NewBase60 number is converted back to its base 10 equivalent. The base 10 ID is appended to <code>https://twitter.com/_/status/</code>. This takes advantage of a feature of twitter.com where they will redirect a tweet URL to the correct username.</p>
 
 
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Twtr.io maintained by <a href="https://github.com/aaronpk">aaronpk</a></p>
-      </footer>
-    </div>
+<h2>
+<a name="faq" class="anchor" href="#un-shortening"><span class="octicon octicon-link"></span></a>FAQ</h2>
 
-  </body>
-</html>
+<h3>Q: Why do I need this?</h3>
+<p>A: You probably don't</p>
+
+<h3>Q: Where is this used?</h3>
+<p>A: You can see an example of where this is useful on the IRC logs for the <a href="http://indiewebcamp.com/irc/2013-08-07#t1375897213">#indiewebcamp IRC channel</a>.</p>
+
+<?php include('footer.php'); ?>
