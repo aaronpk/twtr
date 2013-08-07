@@ -9,7 +9,7 @@
 
   <form action="/shorten" method="get">
     Tweet URL: <input type="text" name="url">
-    <input type="button" value="Make Shorter!">
+    <input type="submit" value="Make Shorter!">
     <input type="hidden" name="format" value="html">
   </form>
 
