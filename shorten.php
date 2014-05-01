@@ -31,7 +31,14 @@ if(get('format') == 'html') {
   echo '<p>' . $shortURL . '</p>';
   include('footer.php');
 
+} elseif(get('format') == 'text') {
+
+  header('Content-type: text/plain');
+  echo $shortURL;
+
 } else {
+
   header('Content-type: application/json');
   echo json_encode(array('short_url'=>$shortURL));
+
 }
