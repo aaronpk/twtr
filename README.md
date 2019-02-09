@@ -31,13 +31,13 @@ A: You probably don't
 
 #### Q: Where is this used?
 
-A: You can see an example of where this is useful on the IRC logs for the [#indiewebcamp IRC channel](http://indiewebcamp.com/irc/2013-08-07#t1375897213).
+A: You can see an example of where this is useful on the IRC logs for the [#indieweb chat](https://chat.indieweb.org/meta/2019-02-07#t1549509206771000).
 
 
 License
 -------
 
-Copyright 2013 by Aaron Parecki
+Copyright 2013-2019 by Aaron Parecki
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
